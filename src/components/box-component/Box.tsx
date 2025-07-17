@@ -5,6 +5,8 @@ import InstagramLogo from "../../assets/instagramLogo.svg";
 import LinkedinLogo from "../../assets/linkedinLogo.svg";
 import GithubLogo from "../../assets/githubLogo.svg";
 import LeetcodeLogo from "../../assets/leetcodeLogo.svg";
+import ProfileImage from "../../assets/profile-image.png";
+import BackgroundImage from "../../assets/background-image.jpg";
 
 const linkCardData: LinkCardType[] = [
   {
@@ -35,7 +37,7 @@ const Box: React.FC = () => {
       <div className="rounded-t-2xl h-32 overflow-hidden">
         <img
           className="object-cover object-top w-full"
-          src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400"
+          src={BackgroundImage}
           alt="Mountain"
         />
       </div>
@@ -43,7 +45,7 @@ const Box: React.FC = () => {
       <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden shadow-md">
         <img
           className="object-cover object-center w-full h-full"
-          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400"
+          src={ProfileImage}
           alt="Profile"
         />
       </div>
